@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.register.LoginActivity">
+    <ImageView
+        android:id="@+id/iv_red_logo"
+        android:layout_width="1000dp"
+        android:layout_height="200dp"
+        android:src="@drawable/red_logo"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/iv_red_logo"
+        android:background="@drawable/et_shape"
+        android:drawableLeft="@drawable/mail"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <com.xwray.passwordview.PasswordView
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/et_email"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_shape"
+        android:drawableLeft="@drawable/ic_lock"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_continue"
+        android:text="SIGN IN"
+        android:layout_below="@id/et_password"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORGOT PASSWORD?"
+        android:id="@+id/tv_fpass"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_login"
+        android:textColor="#B31313"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not a member yet?"
+        android:layout_marginTop="50dp"
+        android:id="@+id/tv_notmember"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_fpass" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/tv_register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_notmember"
+        android:textColor="#B31313"/>
+</RelativeLayout>
